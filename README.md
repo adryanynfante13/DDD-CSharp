@@ -1,14 +1,14 @@
 # DDD-CSharp
 ### Implementacion DDD
--Entidades
--Objetos de Valor
--Comportamientos
--Repositorios
--Eventos
+- Entidades
+- Objetos de Valor
+- Comportamientos
+- Repositorios
+- Eventos
 
 ### Capas
--Apí
--Domain
--Infrastructure
+- Api
+- Domain
+- Infrastructure
 
-Ejemplo Básico Personas .Net DDD SQL Server
+### Ejemplo Básico Personas .Net DDD SQL Server
