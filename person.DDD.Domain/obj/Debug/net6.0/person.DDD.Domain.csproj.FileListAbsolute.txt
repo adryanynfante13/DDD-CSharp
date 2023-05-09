@@ -10,3 +10,15 @@ C:\Users\adryan.ynfante\source\repos\backend\person.DDD\person.DDD.Domain\obj\De
 C:\Users\adryan.ynfante\source\repos\backend\person.DDD\person.DDD.Domain\obj\Debug\net6.0\refint\person.DDD.Domain.dll
 C:\Users\adryan.ynfante\source\repos\backend\person.DDD\person.DDD.Domain\obj\Debug\net6.0\person.DDD.Domain.pdb
 C:\Users\adryan.ynfante\source\repos\backend\person.DDD\person.DDD.Domain\obj\Debug\net6.0\ref\person.DDD.Domain.dll
+C:\Users\adrya\Downloads\person.DDD\person.DDD.Domain\bin\Debug\net6.0\person.DDD.Domain.deps.json
+C:\Users\adrya\Downloads\person.DDD\person.DDD.Domain\bin\Debug\net6.0\person.DDD.Domain.dll
+C:\Users\adrya\Downloads\person.DDD\person.DDD.Domain\bin\Debug\net6.0\person.DDD.Domain.pdb
+C:\Users\adrya\Downloads\person.DDD\person.DDD.Domain\obj\Debug\net6.0\person.DDD.Domain.csproj.AssemblyReference.cache
+C:\Users\adrya\Downloads\person.DDD\person.DDD.Domain\obj\Debug\net6.0\person.DDD.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adrya\Downloads\person.DDD\person.DDD.Domain\obj\Debug\net6.0\person.DDD.Domain.AssemblyInfoInputs.cache
+C:\Users\adrya\Downloads\person.DDD\person.DDD.Domain\obj\Debug\net6.0\person.DDD.Domain.AssemblyInfo.cs
+C:\Users\adrya\Downloads\person.DDD\person.DDD.Domain\obj\Debug\net6.0\person.DDD.Domain.csproj.CoreCompileInputs.cache
+C:\Users\adrya\Downloads\person.DDD\person.DDD.Domain\obj\Debug\net6.0\person.DDD.Domain.dll
+C:\Users\adrya\Downloads\person.DDD\person.DDD.Domain\obj\Debug\net6.0\refint\person.DDD.Domain.dll
+C:\Users\adrya\Downloads\person.DDD\person.DDD.Domain\obj\Debug\net6.0\person.DDD.Domain.pdb
+C:\Users\adrya\Downloads\person.DDD\person.DDD.Domain\obj\Debug\net6.0\ref\person.DDD.Domain.dll
