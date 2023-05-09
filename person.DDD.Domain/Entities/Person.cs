@@ -1,4 +1,5 @@
-﻿using person.DDD.Domain.ValueObjects;
+﻿using person.DDD.Domain.DomainEvents;
+using person.DDD.Domain.ValueObjects;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,6 +26,13 @@ namespace person.DDD.Domain.Entities
         public void SetName(PersonName name)
         {
             Name = name;
+        }
+        /*
+         * Metodo logica de negocio
+         */
+        public void PersonRegistered()
+        {
+            Events.PersonCreated.Publish(new PersonCreated(Id, Name));
         }
     }
 }

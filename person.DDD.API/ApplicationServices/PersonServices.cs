@@ -17,13 +17,10 @@ namespace person.DDD.API.ApplicationServices
             this.personQueries=personQueries;
         }
         //controlador del comando
-        public async Task HandleCommand(CreatePersonCommand createPerson)
+        public async Task HandleCommand(CreatePersonCommand command)
         {
-            var person = new Person(
-                PersonId.Create(createPerson.personId));
-
-            person.SetName(PersonName.Create(createPerson.Name));
-
+            var person = new Person(PersonId.Create(command.personId));
+            person.SetName(PersonName.Create(command.Name));
             await repository.AddPerson(person); 
         }
         //invocación  Queries

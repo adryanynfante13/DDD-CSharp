@@ -8,6 +8,6 @@ namespace person.DDD.Domain.DomainEvents
 {
     public  static class Events
     {
-        public static readonly DomainEvents<PersonCreated> PersonCreated = new DomainEvents<PersonCreated>();
+        public static readonly DomainEvent<PersonCreated> PersonCreated = new DomainEvent<PersonCreated>();
     }
 }

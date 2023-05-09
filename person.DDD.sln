@@ -9,11 +9,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{F919AE
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{0006AA5D-C122-43BF-AC95-C7B383EFE1A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "person.DDD.API", "person.DDD.API\person.DDD.API.csproj", "{A497ED12-01D7-48C8-8C71-9177809BDD29}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "person.DDD.API", "person.DDD.API\person.DDD.API.csproj", "{A497ED12-01D7-48C8-8C71-9177809BDD29}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "person.DDD.Domain", "person.DDD.Domain\person.DDD.Domain.csproj", "{1D3A67C1-42C2-4370-896D-195D1B73BC30}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "person.DDD.Domain", "person.DDD.Domain\person.DDD.Domain.csproj", "{1D3A67C1-42C2-4370-896D-195D1B73BC30}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "person.DDD.Infrastructure", "person.DDD.Infrastructure\person.DDD.Infrastructure.csproj", "{89C3DC8E-79E1-4E4B-A1EA-09E97CB590DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "person.DDD.Infrastructure", "person.DDD.Infrastructure\person.DDD.Infrastructure.csproj", "{89C3DC8E-79E1-4E4B-A1EA-09E97CB590DA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
