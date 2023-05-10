@@ -11,15 +11,21 @@ namespace person.DDD.API.ApplicationServices
     {
         private readonly IPersonRepository repository;
         private readonly PersonQueries personQueries;
+        private IAddressRepository addressRepository;
 
-        public PersonServices(IPersonRepository repository, PersonQueries personQueries) 
+        public PersonServices(IPersonRepository repository, PersonQueries personQueries, IAddressRepository addressRepository) 
         { 
             this.repository = repository;
             this.personQueries=personQueries;
-
-            Events.PersonCreated.Register ((Parameter) =>
+            this.addressRepository=addressRepository;
+            Events.PersonCreated.Register (async (parameter) =>
             {
-                Console.WriteLine("Ejecución de efecto secundario");
+                var address = new Address(parameter.id);
+                address.SetAddressLinel(parameter.AddressLinel);
+                address.SetPostalCode(parameter.AddressPostalCode);
+                address.SetPersonId(parameter.person);
+                await addressRepository.AddAddress(address);
+                Console.WriteLine("Ejecución de evento de dominio");
             });
         }
         //controlador del comando
@@ -28,7 +34,7 @@ namespace person.DDD.API.ApplicationServices
             var person = new Person(PersonId.Create(command.personId));
             person.SetName(PersonName.Create(command.Name));
             await repository.AddPerson(person);
-            person.PersonRegistered();
+            person.PersonRegistered(command.AddressLine, command.postalCode);
         }
         //invocación  Queries
 

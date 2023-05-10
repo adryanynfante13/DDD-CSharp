@@ -16,10 +16,23 @@ namespace person.DDD.Infrastructure
             modelBuilder.Entity<Person>(o => { 
                 o.HasKey(x => x.Id); 
             });
-            modelBuilder.Entity<Person>().OwnsOne(o=>o.Name, conf =>
+
+            modelBuilder.Entity<Domain.Entities.Person>().OwnsOne(o => o.Name, add =>
             {
-                conf.Property(x => x.Value).HasColumnName("Name");
+                add.Property(x => x.Value).HasColumnName("Name");
             });
+             modelBuilder.Entity<Domain.Entities.Address>().OwnsOne(o => o.AddressLinel, add =>
+             {
+                 add.Property(x => x.Value).HasColumnName("linel");
+             });
+            modelBuilder.Entity<Domain.Entities.Address>().OwnsOne(o => o.AddressPostalCode, add =>
+              {
+                  add.Property(x => x.Value).HasColumnName("postalCode");
+              });
+
+            modelBuilder.Entity<Person>().HasMany(o => o.Addresses)
+                .WithOne(o=>o.Person).HasForeignKey(o => o.PersonId);
+
             base.OnModelCreating(modelBuilder);
         }
     }

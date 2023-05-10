@@ -31,9 +31,13 @@ namespace person.DDD.Domain.Entities
         /*
          * Metodo logica de negocio
          */
-        public void PersonRegistered()
+        public void PersonRegistered(string addressline, string postalCode)
         {
-            Events.PersonCreated.Publish(new PersonCreated(Id, Name));
+            Events.PersonCreated.Publish(new PersonCreated(Id, Name, 
+                new Guid()
+                ,new AddressLinel(addressline)
+                ,new AddressPostalCode(postalCode)
+                ,this));
         }
     }
 }

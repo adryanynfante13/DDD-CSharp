@@ -11,9 +11,10 @@ namespace person.DDD.Infrastructure
     public class AddressRepository : IAddressRepository
     {
         private readonly DataBaseContext context;
+
         public AddressRepository(DataBaseContext context)
         {
-            this.context = context; 
+            this.context = context;
         }
         public async Task AddAddress(Address ToSave)
         {
