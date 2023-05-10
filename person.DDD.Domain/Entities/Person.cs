@@ -12,6 +12,7 @@ namespace person.DDD.Domain.Entities
     {
         public Guid Id { get; init; }
         public PersonName Name { get; private set; }
+        public List<Address> Addresses { get; set; }
 
         public Person(Guid id) 
         { 
