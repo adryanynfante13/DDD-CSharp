@@ -1,0 +1,3 @@
+C:\Users\adrya\Downloads\person.DDD\out\person.DDD.Domain.dll
+C:\Users\adrya\Downloads\person.DDD\out\person.DDD.Domain.deps.json
+C:\Users\adrya\Downloads\person.DDD\out\person.DDD.Domain.pdb
